@@ -41,11 +41,17 @@
         right: 0;
         z-index: 0; */
         opacity: 1;
-        padding: 0 30px;
+        padding: 0 200px;
+      
 
     }
     .hidden{
         /* display: none !important; */
+    }
+
+    .main-container{
+        /* padding-left: 100px; */
+
     }
     .main-content{
         /* padding-left: 270px; */
@@ -59,8 +65,6 @@
     .container{
         max-width: 1100px;
         width: 100%;
-         
-    
         /* margin: auto ; */
       
     }
@@ -109,13 +113,13 @@
         display: flex;
         /* Wrap Issue line 61 */
         flex-wrap: wrap;
+        right: 0;
             /* background-color: gold; */
         /* margin-left: 15px; */
         /* margin-right: 15px; */
-        position: relative;
+        /* position: relative; */
+        width: 100%;
     }
-
-  
     .btn{
         font-size: 20px;
         font-weight: 500;
@@ -123,6 +127,7 @@
           margin: 25px 90px;
             background-color:var(--skin-color);
             color: #ffff;
+            height: 5vh;
             border-radius: 40px;
             display: inline-block;
             white-space: no-wrap;
@@ -131,6 +136,13 @@
     .btn:hover{
         transform: scaleX(1.05);
          transition: all 2s ease;
+    }
+
+    .shadow-dark{
+        box-shadow: 3px 10px 50px ;
+        /* color: rgba(red, green, blue, alpha); */
+         
+    
     }
     /* Aside */
     .aside{
@@ -158,7 +170,6 @@
         font-size: 30px;
         text-transform: capitalize;
     }
-
         .aside .logo a{
          
       color: var(--text-black-900);
@@ -294,6 +305,7 @@
     width: 100%;
      height: 600px;
     width: 800px;
+  
 
 }
 h3.hello{
@@ -328,8 +340,9 @@ h3.my-profession{
 .home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
-    position: relative;
-    text-align: center;
+      box-shadow: 60px 10px 500px ;
+    /* position: relative; */
+
 }
 
 .home-img::after{
@@ -366,13 +379,11 @@ h3.my-profession{
 }
 .about-section{
        /* min-height: 100vh; */
-    margin: 100px 300px;
+    margin: 0 300px;
      /* margin: 100px auto; */
      /* background-color: gold; */
-       background-color: rgb(223, 221, 214);
-  
     width: 100%;
-    height: 500vh;
+ 
 }
 .about-section .container{
      /* background-color: gold; */
@@ -415,6 +426,7 @@ h3.my-profession{
     margin-top: 30px;
     /* background-color: red; */
     display: flex;
+    /* line-height: 10px; */
 }
 .about-section .about-content .personal-info .info-item{
      flex: 0 0 50%;
@@ -430,7 +442,7 @@ h3.my-profession{
    color: var(--text-black-900);
    border-bottom: 1px solid var(--bg-black-50);
       border-bottom: 1px solid red;
-/* padding: 30px; */   
+   
 }
 
 .about-section .about-content .personal-info .info-item p span{
@@ -453,6 +465,11 @@ h3.my-profession{
     margin-top: 10px;
 } 
 
+.info-1, .info-2{
+    margin: 0 10px;
+    line-height: 3vh;
+}
+
 .about-section .about-content .Skills{
         flex: 0 0 40%;
     /* max-width: 40%;                          */
@@ -466,7 +483,9 @@ h3.my-profession{
     display: flex;
     width: 100%;
 /* padding-left: 200px; */
+ 
 }
+
 
  .about-section .about-content .Skills .skill-item{
     flex: 0 0 100%;
@@ -509,16 +528,6 @@ h3.my-profession{
     font-size: 15px;
    }
    
-   
-   .about-section .about-content .education,
-   
-   .about-section .about-content .experiences{
-            flex: 10  10 50%;
-            max-width: 50%;
-            margin-top: 30px;
-   }
-
-   
    .about-section .about-content h3.title{
             font-size: 25px;
             margin-bottom: 30px;
@@ -528,5 +537,207 @@ h3.my-profession{
    
    .about-section .about-content .timeline-box{
             flex: 0 0 100%;
+            /* max-width: 100%; */
    }
+
+      .about-section .about-content .timeline{
+        /* background-color: var(--bg-black-100); */
+        padding: 30px 15px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        width: 100%;
+        position: relative;
+      }
+
+      .about-section .about-content .timeline .timeline-item{
+        position: relative;
+        padding-left: 10px;
+        padding-bottom: 30px;
+            width: 25vw;
+            
+      }
+      .about-section .about-content .timeline-item:last-child{
+        padding-bottom: 0;
+      }
+      .about-section .about-content .timeline-item:before{
+        content: " ";
+        width: 2px;
+        position: absolute;
+        height: 110%;
+        left: 2px;
+        top: 0;
+        background-color: var(--skin-color);
+      }
+
+      .about-section .about-content .timeline .circle-dot{
+        position: absolute;
+        left: -5px;
+        padding: 0;
+        top: 0;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: var(--skin-color);
+      }
+
+      .about-section .about-content .timeline .timeline-date{
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+
+      .about-section .about-content .timeline .timeline-date .fa{
+        margin-right: 5px;
+      }
+
+      .about-section .about-content .timeline .timeline-title{
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+      }
+
+      .about-section .about-content .timeline .timeline-text{
+            line-height: 25px;
+            font-size: 16px;
+            text-align: justify;
+      }
+
+      .timeline-details{
+        margin-left: 10px;
+      }
+
+          .row-heading{
+        display: flex;
+        /* width: 150%; */
+        margin-top: 20px;
+       padding-left: 100px;
+     /* border: solid thick red; */
+  
+    }
+
+       .about-section .about-content .education,
+   
+   .about-section .about-content .experiences{
+            flex: 10  10 50%;
+            /* max-width: 50%; */
+            /* margin-top: 30px; */
+   }
+        .row-heading .education{
+       /* width: 50%; */
+      padding-right: 200px;    
+    }
+        .row-heading .experience{
+       width: 50%;
+       padding-left: 60px;
+    }
+
+        /* ===Services=== */
+
+         .service-section{
+        width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+      line-height: 25px;
+      margin: 90px 200px;
+    }
+
+        .container{
+                padding-bottom: 40px;
+        }
+
+    .service-item{
+        padding-bottom: 30px;
+        flex: 0 0 30%;
+        max-width: 33.33%;
+    }
+   
+        .service-item-inner {
+            background-color: var(--bg-black-100);
+               box-shadow: 3px 10px 50px ;
+             border-radius: 10px;  
+             padding: 15px; 
+             /* border: solid thin red; */
+             text-align: center;
+           
+             transition: all 0.3s ease;
+    }
+
+      .service-item-inner h4{
+        font-size: 30px;
+            font-family: 'Clicker Script' , cursive;
+            color: rgb(247, 162, 5);
+            font-weight: 700;
+            text-transform: capitalize;
+
+      }
+    .service-item-inner p{
+        width: 90%;
+          text-decoration-color: #302e4d;
+       text-align: justify;
+       /* line-height: 25px; */
+       
+    }
+    .service-item-inner:hover{
+        box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+        transform: scale(1.1 ,1.1);
+
+    }
+
+
+    .service-item-inner .icon{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        display: block;
+        /* background-color: red; */
+        margin: 0 auto 30px;
+      
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+      .service-item-inner .icon .fa {
+        font-size: 25px;
+        line-height: 80px;
+        color: var(--skin-color);
+        top: 0;
+
+      }
+          .service-item-inner:hover .icon{
+            background-color: var(--skin-color);
+          }
+
+     .service-item-inner:hover .icon .fa{
+                    font-size: 25px;
+                    color: #ffff; 
+        }
+
+        /* ==PORTFOLIO-SECTION== */
+        .portfolio-section{
+            margin-left: 150px;
+        }
+
+            .portfolio-section .container{
+            /* margin-left: 150px; */
+            width:za800px;
+            /* background-color: red; */
+        }
+        .portfolio-heading{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+         .portfolio-heading h2{
+            color: var(--skin-color);
+            font-weight:500 ;
+         }
+
+         .portfolio-item{
+            /* flex: 0 0 33.33%; */
+            margin-bottom: 30px;
+            display: flex;
+         
+         }
 
