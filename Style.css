@@ -15,6 +15,7 @@
         /* background-image: url(/Joasyncc.jpeg);
          backdrop-filter: blur(20px); */
          overflow-x: hidden;
+          /* backdrop-filter: blur(20px); */
     }
     *{
         margin: 0;
@@ -22,7 +23,7 @@
         outline: none;
         text-decoration: none;
         box-sizing: border-box;
-      overflow-wrap: anywhere;
+      overflow-wrap: break-word;
     }
 
     ::before, ::after{
@@ -96,8 +97,7 @@
             top: 100%;
             left: 0;
         }
-
-               .section-title h2::after{
+            .section-title h2::after{
             content: '';
             height: 4px;
             width: 25px;
@@ -106,17 +106,15 @@
             top: 100%;
             left: 0;
             margin-top: 8px;
-
         }
-
     .row{
         display: flex;
         /* Wrap Issue line 61 */
         flex-wrap: wrap;
         right: 0;
             /* background-color: gold; */
-        /* margin-left: 15px; */
-        /* margin-right: 15px; */
+        margin-left: 15px;
+        margin-right: 15px;
         /* position: relative; */
         width: 100%;
     }
@@ -255,20 +253,14 @@
         position: absolute;
         top: 6px;
         left: 0;
-
       }
-
     .aside .nav{
-        margin-top: 2px;
-        
+      margin-top: 2px;  
     }
-
      .aside .nav li{
       margin-bottom: 20px;
       display: block;
-
     }  
-
        .aside .nav li a{
         font-size: 22px;
         font-weight: 900;
@@ -289,24 +281,24 @@
     }
 
     /* home */
-.home{
-    height: 70vh;
-    display: flex;
+.home-section{
+    /* height: 70vh; */
+  /* display: flex; */
     color: var(--text-black-900);
     /* top>right>bottom>left always in clockwise order both margin*/
     /* margin: 300px 200px; */
-    margin: 300px 200px 0 200px ;
+    margin: 200px 200px 200px 250px ;
     width: 100%;
     /* background-color: #000; */
 }
+        .home-row{
 
-.home .home-info{
-    flex: 0 0 60%;
-    width: 100%;
+            display: flex;
+        }
+.home-section .home-info{
+    flex: 0 0 40%;
+    /* width: 100%; */
      height: 600px;
-    width: 800px;
-  
-
 }
 h3.hello{
     font-size: 30px;
@@ -323,7 +315,6 @@ h3.my-profession{
     margin: 15px 0;
       margin: 25px 90px ;
       word-spacing: 5px;
-    
 }
 .typing{
     color: var(--skin-color);
@@ -337,25 +328,14 @@ h3.my-profession{
    word-spacing: 5px;
  
 }
-.home .home-img {
+.home-section .home-img {
     flex: 0 0 40%;
-    max-width: 40%;
+    max-width: 10%;
       box-shadow: 60px 10px 500px ;
     /* position: relative; */
 
 }
 
-.home-img::after{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-      border-right: 10px solid var(--skin-color);
-      right: -350px;
-      bottom: -40px;
-
-}
 
 .home-img::before{
     content: '';
@@ -364,16 +344,41 @@ h3.my-profession{
     width: 80px;
       border-left: 10px solid var(--skin-color);
     border-top: 10px solid var(--skin-color);
-      left: -50px;
-      top: -40px;
+      left: 950px;
+      top: 170px;
 }
-.home .home-img img{
+
+/* .home-img::before{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+      border-left: 10px solid var(--skin-color);
+    border-bottom: 10px solid var(--skin-color);
+      top: 950px;
+      left: 170px;
+} */
+
+
+.home-img::after{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+      border-bottom: 10px solid var(--skin-color);
+      border-right: 10px solid var(--skin-color);
+      right: 100px;
+      bottom: 50px;
+
+}
+
+
+ .home-img img{
     height: 600px;
     width: 700px;
     /* margin: auto; */
 }
-
-.home .home-img img:hover{
+.home-img img:hover{
      transform: scaleX(1.05);
    transition: all 3s ease;
 }
@@ -636,22 +641,19 @@ h3.my-profession{
 
          .service-section{
         width: 100%;
-       display: flex;
-       flex-wrap: wrap;
+       /* display: flex;
+       flex-wrap: wrap; */
       line-height: 25px;
       margin: 90px 200px;
     }
-
         .container{
                 padding-bottom: 40px;
         }
-
     .service-item{
         padding-bottom: 30px;
         flex: 0 0 30%;
-        max-width: 33.33%;
+        /* max-width: 33.33%; */
     }
-   
         .service-item-inner {
             background-color: var(--bg-black-100);
                box-shadow: 3px 10px 50px ;
@@ -659,7 +661,6 @@ h3.my-profession{
              padding: 15px; 
              /* border: solid thin red; */
              text-align: center;
-           
              transition: all 0.3s ease;
     }
 
@@ -669,7 +670,6 @@ h3.my-profession{
             color: rgb(247, 162, 5);
             font-weight: 700;
             text-transform: capitalize;
-
       }
     .service-item-inner p{
         width: 90%;
@@ -683,8 +683,6 @@ h3.my-profession{
         transform: scale(1.1 ,1.1);
 
     }
-
-
     .service-item-inner .icon{
         height: 60px;
         width: 60px;
@@ -717,27 +715,58 @@ h3.my-profession{
         /* ==PORTFOLIO-SECTION== */
         .portfolio-section{
             margin-left: 150px;
+            /* background-color: red; */
         }
 
             .portfolio-section .container{
             /* margin-left: 150px; */
-            width:za800px;
-            /* background-color: red; */
+           width: 100%;
+         
         }
         .portfolio-heading{
-            flex: 0 0 100%;
+            /* flex: 0 0 100%; */
             max-width: 100%;
         }
-
          .portfolio-heading h2{
             color: var(--skin-color);
             font-weight:500 ;
          }
-
          .portfolio-item{
             /* flex: 0 0 33.33%; */
             margin-bottom: 30px;
-            display: flex;
-         
+            /* display: flex; */
          }
 
+         .portfolio-item-inner{
+            border: 0.5px solid  rgb(226, 12, 12);
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+         }
+         .portfolio-img img{
+            width: 20vw;
+            height: 35vh;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+         }
+
+         .portfolio-img{
+              background-color:wheat;
+         }
+         .port-item{
+          padding: 70px;
+
+         }
+
+        .portfolio-row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;    
+        }
+         .portfolio-row img{
+          /* display: flex;  */
+         
+         /* width: 50%; */
+         }
