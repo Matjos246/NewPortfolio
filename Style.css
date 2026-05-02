@@ -43,8 +43,6 @@
         z-index: 0; */
         opacity: 1;
         padding: 0 200px;
-      
-
     }
     .hidden{
         /* display: none !important; */
@@ -52,13 +50,11 @@
 
     .main-container{
         /* padding-left: 100px; */
-
     }
     .main-content{
         /* padding-left: 270px; */
       
     }
-
     .padd-15{
         padding-left: 15px;
         padding-right: 15px;
@@ -720,8 +716,7 @@ h3.my-profession{
 
             .portfolio-section .container{
             /* margin-left: 150px; */
-           width: 100%;
-         
+           width: 100%;        
         }
         .portfolio-heading{
             /* flex: 0 0 100%; */
@@ -738,7 +733,7 @@ h3.my-profession{
          }
 
          .portfolio-item-inner{
-            border: 0.5px solid  rgb(226, 12, 12);
+            /* border: 0.5px solid  rgb(226, 12, 12); */
             border-radius: 10px;
             overflow: hidden;
             cursor: pointer;
@@ -770,3 +765,64 @@ h3.my-profession{
          
          /* width: 50%; */
          }
+
+         /*=== CONTACT START===*/
+.contact-section .section-title{
+    margin-left: 300px;
+}
+
+.contact-title{
+    color: var(--skin-color);
+    text-align: right;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.contact-sub-title{
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 15px;
+    padding-left: 800px;
+
+}
+.contact-section .contact-info-item{
+    flex: 0 0 25%;
+    /* max-width: 30%; */
+    /* text-align:center; */
+    background-color:rgb(226, 226, 188);
+    padding-top: 7px;
+    padding-left: 100px;
+}
+.contact-section  .row-contact{
+    padding-left: 300px;
+    /* margin-top: 40px;
+     margin-bottom: 40px; */
+     margin: 40px 0;
+    display: flex;
+    width: 175%;
+    height: 8vh;
+  
+}
+.contact-section  .row-contact .icon{
+        display: inline-block;
+}
+.contact-section  .row-contact .icon .fa{
+    font-size: 20px;
+    color: var(--skin-color);
+}
+
+.contact-section  .row-contact .icon .fa:hover{
+   transform: scale(1.15);
+}
+
+.contact-info:hover{
+
+}
+
+.contact-form{
+    justify-content: center;
+    align-items: center;
+    padding: 100px 300px;
+}
+
