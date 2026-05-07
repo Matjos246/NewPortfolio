@@ -1,0 +1,1 @@
+const styleSwitcherToggler = document.querySelector(".style-switcher-toggle");
