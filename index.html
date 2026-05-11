@@ -4,26 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.js.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
   <!--=== CSS files=== -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js">
   <link rel="stylesheet" href="/Style.css" />
   <link rel="stylesheet" href="/color-1.css" />
-  <!-- <link rel="stylesheet" href="/color-2.css"> -->
+  <!-- <link rel="stylesheet" href="/color-2.css "> -->
   <!-- Style Switcher -->
-     <link rel="stylesheet" href="/color-1.css" class="alternate-style" title="color-1" disabled/>
-      <link rel="stylesheet" href="/color-2.css" class="alternate-style" title="color-2" disabled/>
-       <link rel="stylesheet" href="/color-3.css" class="alternate-style" title="color-3" disabled/>
-        <link rel="stylesheet" href="/color-4.css" class="alternate-style" title="color-4" disabled/>
-         <link rel="stylesheet" href="/color-5.css" class="alternate-style" title="color-5" disabled/>
+     <link rel="stylesheet" href="/color-1.css" class="alternate-style" title="color-1" />
+      <link rel="stylesheet" href="/color-2.css" class="alternate-style" title="color-2" />
+       <link rel="stylesheet" href="/color-3.css" class="alternate-style" title="color-3" />
+        <link rel="stylesheet" href="/color-4.css" class="alternate-style" title="color-4" />
+         <link rel="stylesheet" href="/color-5.css" class="alternate-style" title="color-5" />
   <link rel="stylesheet" href="/style-switcher.css">
 </head>
 <body>
-
   <!-- Main container Start -->
   <div class="main-container">
-    <!--Aside Start  -->
+    <!--Aside Start-->
         <div class="aside">
           <div class="logo">
             <a href="">
@@ -35,22 +34,22 @@
             <span></span>
           </div>
           <ul class="nav">
-            <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-            <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-            <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-            <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+            <li><a href="#Home" class="active"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#About"><i class="fa fa-user"></i>About</a></li>
+            <li><a href="#Services"><i class="fa fa-list"></i>Services</a></li>
+            <li><a href="#Portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+            <li><a href="#Contact"><i class="fa fa-comments"></i>Contact</a></li>
           </ul>
         </div>  
     <!-- Aside End -->
     <!-- Main content start -->
     <div class="main-content">
       <!-- Home Section start -->
-      <div class="home-section">
+      <div class="home-section" >
         <!-- <div class="container"> -->
           <div class="home-row">
             <div class="home-info padd-15">
-              <h3 class="hello">
+              <h3 class="hello" id="Home">
                 Hello, my name is <span class="name">Joshua Akinola</span>
               </h3>
               <h3 class="my-profession">
@@ -73,11 +72,11 @@
       <!-- home section end -->
       <!-- About Section Start -->
 
-      <div class="about-section">
+      <div class="about-section" >                                    
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
-              <h2>About Me</h2>
+              <h2  id="About">About Me</h2>
             </div>
           </div>
           <div class="row"> 
@@ -179,7 +178,6 @@
                         <div class="skill-percent">76%</div>
                       </div>
                     </div>
-
                     <div class="skill-item">
                       <h5>JS</h5>
                       <div class="progress">
@@ -187,7 +185,6 @@
                         <div class="skill-percent">76%</div>
                       </div>
                     </div>
-
                     <div class="skill-item">
                       <h5>REACT JS</h5>
                       <div class="progress">
@@ -195,7 +192,6 @@
                         <div class="skill-percent">60%</div>
                       </div>
                     </div>
-
                     <div class="skill-item">
                       <h5>NODE JS</h5>
                       <div class="progress">
@@ -203,7 +199,6 @@
                         <div class="skill-percent">40%</div>
                       </div>
                     </div>
-
                     <div class="skill-item">
                       <h5>EXPRESS JS</h5>
                       <div class="progress">
@@ -294,14 +289,12 @@
                             eius ea odit asperiores, exercitationem eligendi a
                             ad voluptatem fuga?
                           </p>
-                          </div>
-                         
+                          </div>                   
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
                 <div class="experience">
                   <h3 class="title">Experience</h3>
                   <div class="row">
@@ -387,17 +380,17 @@
       </div>
       <!-- About Section End -->
        <!-- ====Services sections Start ===-->
-      <section class="service-section">
+      <section class="service-section" >
         <div class="service-row">
           <div class="section-title padd-15">
-            <h2>Services</h2>
+            <h2 id="Services">Services</h2>
           </div>
 
           <div class="row">
             <!-- ===Service items  Start=== -->
              <div class="service-item padd-15">
               <div class="service-item-inner">
-                <div class="icon">
+                <div class="icon" >
                   <i class="fa fa-mobile-alt"></i>
                 </div>
                 <h4>Web design</h4>
@@ -474,11 +467,11 @@
            <!-- ====Services sections End ===-->
                <!-- ===Portfolio sections START===-->
 
-               <section class="portfolio-section">
+               <section class="portfolio-section" >
                   <div class="container">
                     <div class="row">
                       <div class="section-title">
-                        <h2>Portfolio</h2>
+                        <h2 id="Portfolio">Portfolio</h2>
                       </div>
                     </div>
 
@@ -601,11 +594,11 @@
                <!-- ===Portfolio Section End=== -->
 
               <!-- ===Contact Section Start=== -->
-               <div class="contact-section">
+               <div class="contact-section" >
                 <div class="container">
                   <div class="row">
                     <div class="section-title padd-15">
-                      <h2> Contact Me</h2>
+                      <h2 id="Contact"> Contact Me</h2>
                     </div>
                   </div>
                   <div class="contact-title-wrapper">
@@ -635,22 +628,17 @@
                            <h4>Office</h4>
                           <p>Alakia</p>
                       </div>
-                       
-                      
                     </div>
                           <!-- ==contact-info-item END== -->
-
-                                      <!-- ==contact-info-item START== -->
+                          <!-- ==contact-info-item START== -->
                     <div class="contact-info-item padd-15">
                       <div class="icon"> <i class="fa fa-envelope"></i></div>
-
                       <div class="contact-info">
                               <h4>Email</h4>
                           <p>ayobamiakinola96@gmail.com</p>
                       </div>
                     </div>
                           <!-- ==contact-info-item END== -->
-
                                       <!-- ==contact-info-item START== -->
                     <div class="contact-info-item padd-15">
                       <div class="icon"> <i class="fa fa-globe-europe"></i></div>
@@ -704,7 +692,6 @@
                                       </div>
                                     </div>
                                           </div>
-                               
                                 </div>
                                </div>
                   </div>
@@ -714,17 +701,14 @@
     <!-- Main-Content end -->
   </div>
   <!-- Main container End -->
-
   <div class="style-switcher">
           <div class="style-switcher-toggler s-icon">
             <i class="fas fa-cog fa-spin"></i>
           </div>
-
           <div class="day-night s-icon">
             <i class="fas fa-moon"></i>
           </div>
           <h4>Theme Colors</h4>
-
           <div class="colors">
             <span class="color-1" onclick="setActiveStyle('color-1')"></span>
             <span class="color-2" onclick="setActiveStyle('color-2')"></span>
@@ -734,8 +718,11 @@
           </div>
   </div>
   <!-- JS files -->
-
   <script src="/script.js"></script>
   <script src="/style-switcher.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </body>
 </html>
