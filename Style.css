@@ -17,7 +17,8 @@
         background-color:black; 
         
     }
-    
+
+
     body{
         margin: 0;
         padding: 0;
@@ -56,7 +57,7 @@
     }
 
     li:hover {
-       transform: translateX(1px);
+       transform: translateX(5px);
     }
     .hidden{
         /* display: none !important; */
@@ -77,7 +78,6 @@
         max-width: 1100px;
         width: 100%;
         /* margin: auto ; */
-      
     }
     /* .section .container{
         padding-top: 60px;
@@ -175,6 +175,7 @@
         left: 40px;
         font-size: 30px;
         text-transform: capitalize;
+       
     }
         .aside .logo a{
          
@@ -397,7 +398,7 @@ h3.my-profession{
      /* margin: 100px auto; */
      /* background-color: gold; */
     width: 100%;
- 
+
 }
 .about-section .container{
      /* background-color: gold; */
@@ -468,6 +469,7 @@ h3.my-profession{
 
 }
 
+
 .about-section .about-content .personal-info .buttons{
     /* margin-top: 30px; */
     display: flex;
@@ -478,6 +480,10 @@ h3.my-profession{
     margin-right: 15px;
     margin-top: 10px;
 } 
+
+.About_phrase{
+    padding-block: 10px;
+}
 
 .info-1, .info-2{
     margin: 0 10px;
@@ -779,6 +785,56 @@ h3.my-profession{
          /* width: 50%; */
          }
 
+
+         /* ==Joasync_visions START== */
+         .Joasync_visions{
+            margin-bottom: 70px;
+         }
+            .Joasync_container{
+                margin-left: 100px;
+                  width: 110%;
+                text-wrap: wrap;
+                word-wrap: break-word;
+                overflow: visible;
+            }
+            .Joasync_heading{
+                padding-inline: 20px;
+                padding-block: 10px;
+            }
+             .Joasync_heading h3{
+                color: var(--skin-color);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+               
+          
+             }
+             .Joasync_details{
+                  word-spacing: 5px;
+                letter-spacing: 1px;
+                   
+             }
+            .Joasync_details p{
+                  width: 97%;
+                  font-family: 'Courier New', Courier, monospace;
+                  /* font-family: cursive; */
+                  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+                  font-size: 18px;
+                    
+                    background-color: rgba(0, 0, 0, 0.1); 
+                    padding-left: 10px;
+            }
+
+            .details_list{
+                padding: 20px;
+                margin: 10px;
+                font-size: 15px;
+  
+            }
+            .details_list li {
+                font-size: 17px;
+            
+ 
+            }
+          /* ==Joasync_visions END== */
          /*=== CONTACT START===*/
 .contact-section .section-title{
     margin-left: 300px;
@@ -801,7 +857,8 @@ h3.my-profession{
     flex: 0 0 25%;
     /* max-width: 30%; */
     /* text-align:center; */
-    background-color:rgb(226, 226, 188);
+       background-color: rgba(0, 0, 0, 0.1); 
+    background-color:rgb(226, 226, 188, 0.7);
     padding-top: 7px;
     padding-left: 100px;
 }
