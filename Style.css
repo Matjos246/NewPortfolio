@@ -17,8 +17,6 @@
         background-color:black; 
         
     }
-
-
     body{
         margin: 0;
         padding: 0;
@@ -76,7 +74,7 @@
     }
     .container{
         max-width: 1100px;
-        width: 100%;
+        width: 200%;
         /* margin: auto ; */
     }
     /* .section .container{
@@ -127,6 +125,7 @@
         margin-right: 15px;
         /* position: relative; */
         width: 100%;
+      
     }
     .btn{
         font-size: 20px;
@@ -402,7 +401,7 @@ h3.my-profession{
 }
 .about-section .container{
      /* background-color: gold; */
-     width: 100%;
+     /* width: 100%; */
 }
 .about-section .about-content{
     /* flex: 0 0 100%; */
@@ -430,9 +429,11 @@ h3.my-profession{
 }
 
 .about-section .about-content .about-text p{
-    font-size: 16px;
-    /* line-height: 25px; */
+    font-size: 20px;
+    line-height: 25px;
     color: var(--text-black-900);
+    width: 150%;
+
 }
 
 .about-section .about-content .personal-info{
@@ -644,8 +645,12 @@ h3.my-profession{
             /* margin-top: 30px; */
    }
         .row-heading .education{
-       /* width: 50%; */
-      padding-right: 200px;    
+       /* width: 100%; */
+      padding-right: 200px;  
+    }
+
+    .education .timeline-item{
+      
     }
         .row-heading .experience{
        width: 50%;
@@ -668,6 +673,7 @@ h3.my-profession{
         padding-bottom: 30px;
         flex: 0 0 30%;
         /* max-width: 33.33%; */
+           width: 150%;
     }
         .service-item-inner {
             background-color: var(--bg-black-100);
@@ -677,6 +683,7 @@ h3.my-profession{
              /* border: solid thin red; */
              text-align: center;
              transition: all 0.3s ease;
+          
     }
 
       .service-item-inner h4{
@@ -691,6 +698,7 @@ h3.my-profession{
           text-decoration-color: #302e4d;
        text-align: justify;
        /* line-height: 25px; */
+       padding-top: 10px;
        
     }
     .service-item-inner:hover{
@@ -704,7 +712,7 @@ h3.my-profession{
         border-radius: 50%;
         display: block;
         /* background-color: red; */
-        margin: 0 auto 30px;
+        margin: 0 auto ;
       
         text-align: center;
         transition: all 0.5s ease-in-out;
@@ -733,63 +741,68 @@ h3.my-profession{
             /* background-color: red; */
         }
 
-            .portfolio-section .container{
-            /* margin-left: 150px; */
-           width: 100%;        
-        }
-        .portfolio-heading{
-            /* flex: 0 0 100%; */
-            max-width: 100%;
-        }
-         .portfolio-heading h2{
-            color: var(--skin-color);
-            font-weight:500 ;
-         }
-         .portfolio-item{
-            /* flex: 0 0 33.33%; */
-            margin-bottom: 30px;
-            /* display: flex; */
-         }
 
-         .portfolio-item-inner{
-            /* border: 0.5px solid  rgb(226, 12, 12); */
-            border-radius: 10px;
-            overflow: hidden;
-            cursor: pointer;
-         }
-         .portfolio-img img{
-            width: 20vw;
-            height: 35vh;
-            justify-content: center;
-            align-items: center;
-            border-radius: 40px;
-         }
 
-         .portfolio-img{
-              background-color:wheat;
-         }
-         .port-item{
-          padding: 70px;
 
-         }
+         /* AI PORTFOLIO */
 
-        .portfolio-row{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            justify-content: space-between;    
-        }
-         .portfolio-row img{
-          /* display: flex;  */
-         
-         /* width: 50%; */
-         }
 
+         .portfolio-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: stretch;
+}
+
+/* Tablet */
+@media (max-width: 992px){
+  .portfolio-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  .portfolio-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.portfolio-card{
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.portfolio-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-body a{
+  margin-top: auto;
+  color: #ff0022;
+  text-decoration: none;
+  font-weight: bold;
+}
 
          /* ==Joasync_visions START== */
          .Joasync_visions{
             margin-bottom: 70px;
          }
+         
             .Joasync_container{
                 margin-left: 100px;
                   width: 110%;
@@ -804,13 +817,10 @@ h3.my-profession{
              .Joasync_heading h3{
                 color: var(--skin-color);
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
-               
-          
              }
              .Joasync_details{
                   word-spacing: 5px;
                 letter-spacing: 1px;
-                   
              }
             .Joasync_details p{
                   width: 97%;
@@ -831,15 +841,19 @@ h3.my-profession{
             }
             .details_list li {
                 font-size: 17px;
+            }
+            .brand{
+                font-family: cursive;
+                color: orange;
+                font-family: cursive;
             
- 
+             font-weight: 900;
             }
           /* ==Joasync_visions END== */
          /*=== CONTACT START===*/
 .contact-section .section-title{
     margin-left: 300px;
 }
-
 .contact-title{
     color: var(--skin-color);
     text-align: right;
