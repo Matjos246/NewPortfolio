@@ -1,0 +1,241 @@
+/* ====RESPONSIVENESS=== */
+@media(max-width:1910px){
+   .about-text p{
+   /* background-color: #f0e5e5; */
+    text-overflow: var(word-wrap);
+   text-wrap: var(wrap); 
+   max-width: 80vw;
+    
+   }
+}
+
+@media(max-width:1900px){
+   .about-text p{
+   /* background-color: #f0e5e5; */
+    text-overflow: var(word-wrap);
+   text-wrap: var(wrap); 
+   max-width: 75vw;
+    
+   }
+}
+
+
+@media(max-width:1799px){
+   .home-img::before{
+    content: none;
+   }
+
+   .home-img::after{
+    content: none;
+   }
+}
+
+
+@media(max-width:1631px){
+   .home-img img{
+     width: 500px;
+     height: 500px;
+   }
+
+   .home-img::after{
+    content: none;
+   }
+
+       .grid{
+        padding: 0;
+        margin: 0;
+        width: 70%;
+    }
+    .Skills{
+        padding: 0;
+        margin: 0;
+        width: 10%;
+    }
+    .personal-info{
+        /* width: 10%; */
+    
+    }
+       .personal-info p{ 
+        line-height: 20px;
+         padding-block: 200px;
+       
+    }
+
+      .Skills .skill-item{
+        padding: 0;
+        margin: 0;
+    }
+
+    .buttons {
+            padding-top: 200px;
+    }
+
+     .buttons .btn {
+           width: 200px;
+    }
+
+      .buttons .hire-me {
+           width: 150px;
+    }
+}
+
+
+@media(max-width:1610px){
+   .home-img img{
+     width: 500px;
+     height: 500px;
+   }
+
+   .home-img::after{
+    content: none;
+   }
+}
+
+@media(max-width:1410px){
+   .about-text p{
+   /* background-color: #f0e5e5; */
+    text-overflow: var(word-wrap);
+   text-wrap: var(wrap); 
+   max-width: 72vw;
+    
+   }
+}
+
+@media(max-width:1270px){
+   .about-text p{
+   /* background-color: #f0e5e5; */
+    text-overflow: var(word-wrap);
+   text-wrap: var(wrap); 
+   max-width: 71vw; 
+   }
+
+      .home-img img{
+     width: 420px;
+     height: 410px;
+   }
+}
+
+@media(max-width:1250px){
+      .home-img img{
+     width: 450px;
+     height: 450px;
+   }
+}
+
+@media(max-width:1225px){
+         .about-text p{
+  
+    max-width: 69vw; 
+   }
+
+}
+
+@media(max-width:1220px){
+         .about-text p{
+   /* background-color: #f0e5e5; */
+    /* text-overflow: var(word-wrap);
+   text-wrap: var(wrap);  */
+   max-width: 70vw; 
+   }
+
+}
+
+@media(max-width:1200px){
+    aside{
+        left: -270px;
+    }
+    .main-content{
+        padding-left: 0;
+    }
+
+    .about-section .about-content .personal-info .info-item p span{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .grid{
+        padding: 0;
+        margin: 0;
+        width: 70%;
+    }
+    .Skills{
+        padding: 0;
+        margin: 0;
+        width: 10%;
+    }
+    .personal-info{
+        width: 10%;
+    }
+       .personal-info p{ 
+        line-height: 20px;
+    }
+      .Skills .skill-item{
+        padding: 0;
+        margin: 0;
+    }
+    .buttons {
+            padding-top: 30px;
+    }
+     .buttons .btn {
+           width: 200px;
+    }
+      .buttons .hire-me {
+           width: 150px;
+    }
+}
+
+@media(max-width:1130px){
+    .home-row{
+      display: grid;
+    }
+ .home-row .home-img img{
+  padding-left:180px;
+      margin-top: -180px;
+      width: 700px;
+    }
+
+    .home-info{
+      max-width: 80%;
+    }
+}
+
+
+@media (min-width: 1100px) and (max-width: 1180px){
+  .portfolio-grid{
+    /* grid-template-columns: 3fr; */
+  }
+
+        .home-img img{
+     width: 300px;
+     height: 450px;
+   }
+
+      .about-text p{
+   /* background-color: #f0e5e5; */
+    text-overflow: var(word-wrap);
+   text-wrap: var(wrap); 
+   max-width: 67vw;
+    
+   }
+
+}
+
+
+/* Tablet */
+@media (width: 992px){
+  .portfolio-grid{
+    grid-template-columns: repeat(2, 1fr);
+      /* grid-template-columns: 1fr; */
+      width: 50%;
+      height: 300vh;
+  }
+  .home-info{
+    
+  }
+}
+/* Mobile */
+@media (width: 700px){
+  .portfolio-grid{
+    grid-template-columns: 1fr;
+  }
+}

@@ -27,6 +27,10 @@
          overflow-x: hidden;
           /* backdrop-filter: blur(20px); */
     }
+
+    body,html{
+   overflow-x:hidden;
+}
     *{
         margin: 0;
         padding: 0;
@@ -299,6 +303,7 @@
     margin: 200px 200px 200px 250px ;
     width: 100%;
     /* background-color: #000; */
+    /* display: flex; */
 }
         .home-row{
 
@@ -339,8 +344,8 @@ h3.my-profession{
 }
 .home-section .home-img {
     flex: 0 0 40%;
-    max-width: 10%;
-      box-shadow: 60px 10px 500px ;
+    /* max-width: 10%; */
+      /* box-shadow: 60px 10px 500px ; */
     /* position: relative; */
 
 }
@@ -353,19 +358,19 @@ h3.my-profession{
     width: 80px;
       border-left: 10px solid var(--skin-color);
     border-top: 10px solid var(--skin-color);
-      left: 950px;
-      top: 170px;
+      left: 930px;
+      top: 150px;
 }
 
 /* .home-img::before{
     content: '';
-    position: absolute;
+    position:relative;
     height: 80px;
     width: 80px;
       border-left: 10px solid var(--skin-color);
     border-bottom: 10px solid var(--skin-color);
-      top: 950px;
-      left: 170px;
+      bottom: 95px;
+      left: 17px;
 } */
 
 
@@ -376,7 +381,7 @@ h3.my-profession{
     width: 80px;
       border-bottom: 10px solid var(--skin-color);
       border-right: 10px solid var(--skin-color);
-      right: 100px;
+      right: 90px;
       bottom: 50px;
 
 }
@@ -389,6 +394,9 @@ h3.my-profession{
 }
 .home-img img:hover{
      transform: scaleX(1.05);
+       transform: skewX(1deg);
+         transform: translate(1rem, 1rem);
+     
    transition: all 3s ease;
 }
 .about-section{
@@ -504,10 +512,10 @@ h3.my-profession{
     display: flex;
     width: 100%;
 /* padding-left: 200px; */
- 
+    padding: 0;
+        margin: 0;
+        width: 120%;
 }
-
-
  .about-section .about-content .Skills .skill-item{
     flex: 0 0 100%;
     max-width: 100%;
@@ -741,33 +749,21 @@ h3.my-profession{
             /* background-color: red; */
         }
 
+        .portfolio-section, .container{
+            /* background-color: green; */
+        }
+
 
          .portfolio-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
   align-items: stretch;
     box-shadow: 0 5px 20px rgb(0, 0, 0.1);
      width: 110%;
-     height: 115vh;
-   
-    
- 
+     height: 115vh; 
 }
 
-/* Tablet */
-@media (max-width: 992px){
-  .portfolio-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px){
-  .portfolio-grid{
-    grid-template-columns: 1fr;
-  }
-}
 
 .portfolio-card{
   background: #fff;
@@ -775,11 +771,11 @@ h3.my-profession{
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%;
-box-shadow: 0 5px 20px rgb(0, 0, 0.1); 
-
+    box-shadow: 0 5px 20px rgb(0, 0, 0.1); 
+    padding: 5px 1px;
+    /* width: 500px;
+      height: 400px; */
 }
-
 .portfolio-card img{
   width: 100%;
   object-fit: cover;
@@ -788,7 +784,7 @@ box-shadow: 0 5px 20px rgb(0, 0, 0.1);
 
 
 .card-body{
-  padding: 15px;
+  /* padding: 15px; */
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -801,18 +797,17 @@ box-shadow: 0 5px 20px rgb(0, 0, 0.1);
   color: #ff0022;
   text-decoration: none;
   font-weight: bold;
-
 }
 
 .card-body a:hover{
     transform: translateX(7px);
-   
      color: #ffffff;
 }
 
          /* ==Joasync_visions START== */
          .Joasync_visions{
-            margin-bottom: 70px;
+            /* margin-bottom: 70px;
+            margin-top: 300px; */
          }
          
             .Joasync_container{
@@ -963,68 +958,4 @@ box-shadow: 0 5px 20px rgb(0, 0, 0.1);
 .contact-form .btn{
     height: 50px;
     padding: 0 50px;
-}
-/* ====RESPONSIVENESS=== */
-@media(max-width:1200px){
-    aside{
-        left: -270px;
-    }
-
-    .main-content{
-        padding-left: 0;
-    }
-
-    .about-section .about-content .personal-info .info-item p span{
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-    .grid{
-        padding: 0;
-        margin: 0;
-        width: 70%;
-    }
-    .Skills{
-        padding: 0;
-        margin: 0;
-        width: 10%;
-    }
-    .personal-info{
-        width: 10%;
-    }
-       .personal-info p{ 
-        line-height: 20px;
-    }
-      .Skills .skill-item{
-        padding: 0;
-        margin: 0;
-    }
-
-    .buttons {
-            padding-top: 30px;
-    }
-
-     .buttons .btn {
-           width: 200px;
-    }
-
-      .buttons .hire-me {
-           width: 150px;
-    }
-}
-@media(max-width:990px){
-    .portfolio-item, .service-item{
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .home-info{
-     flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .home-img{
-        /* display: none; */
-
-        
-    }
 }
