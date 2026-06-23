@@ -22,8 +22,8 @@
         padding: 0;
         /* line-height: 1.5; */
         font-size: 16px;
-        /* background-image: url(/Joasyncc.jpeg);
-         backdrop-filter: blur(20px); */
+   
+         /* backdrop-filter: blur(20px);  */
          overflow-x: hidden;
           /* backdrop-filter: blur(20px); */
     }
@@ -149,8 +149,8 @@
          transition: all 2s ease;
     }
 
-    .shadow-dark{
-        box-shadow: 3px 10px 50px ;
+    .portfolio-grid-dark{
+        box-portfolio-grid: 3px 10px 50px ;
         /* color: rgba(red, green, blue, alpha); */
     }
     /* Aside */
@@ -345,12 +345,10 @@ h3.my-profession{
 .home-section .home-img {
     flex: 0 0 40%;
     /* max-width: 10%; */
-      /* box-shadow: 60px 10px 500px ; */
+      /* box-portfolio-grid: 60px 10px 500px ; */
     /* position: relative; */
 
 }
-
-
 .home-img::before{
     content: '';
     position: absolute;
@@ -372,8 +370,6 @@ h3.my-profession{
       bottom: 95px;
       left: 17px;
 } */
-
-
 .home-img::after{
     content: '';
     position: absolute;
@@ -383,10 +379,7 @@ h3.my-profession{
       border-right: 10px solid var(--skin-color);
       right: 90px;
       bottom: 50px;
-
 }
-
-
  .home-img img{
     height: 600px;
     width: 700px;
@@ -401,7 +394,7 @@ h3.my-profession{
 }
 .about-section{
        /* min-height: 100vh; */
-    margin: 0 300px;
+    margin: -90px 300px;
      /* margin: 100px auto; */
      /* background-color: gold; */
     width: 100%;
@@ -422,7 +415,6 @@ h3.my-profession{
 .about-section .about-content .about-text{
     flex: 0 0 100%;
     min-width: 100%;
-  
 }
 
 .about-section .about-content .about-text h3{
@@ -501,7 +493,7 @@ h3.my-profession{
 
 .about-section .about-content .Skills{
         flex: 0 0 40%;
-    /* max-width: 40%;                          */
+    /* max-width: 40%;*/
     /* background-color:green; */
     margin-top: 30px;
     /* padding-left: 200px; */
@@ -566,11 +558,10 @@ h3.my-profession{
    
    .about-section .about-content .timeline-box{
             flex: 0 0 100%;
-            /* max-width: 100%; */
+           
    }
 
       .about-section .about-content .timeline{
-        /* background-color: var(--bg-black-100); */
         padding: 30px 15px;
         /* border: 1px solid black; */
         border-radius: 10px;
@@ -583,6 +574,8 @@ h3.my-profession{
         padding-left: 10px;
         padding-bottom: 30px;
             width: 25vw;
+            max-height: 10vh;
+        
             
       }
       .about-section .about-content .timeline-item:last-child{
@@ -639,22 +632,43 @@ h3.my-profession{
           .row-heading{
         display: flex;
         /* width: 150%; */
-        margin-top: 20px;
+        margin-block: 100px;
        padding-left: 100px;
+       padding-block: 30px;
      /* border: solid thick red; */
+   
   
     }
 
-       .about-section .about-content .education,
-   
-   .about-section .about-content .experiences{
-            flex: 10  10 50%;
-            /* max-width: 50%; */
+  
+
+       .about-section .about-content .education{
+          /* flex: 30  40 30%; */
+            max-width: 55%;
             /* margin-top: 30px; */
+                  box-shadow: 3px 10px 40px 20px ;   
+       }
+
+       .education h3{
+        margin-top: 20px;
+        margin-left: 20px;
+       }
+
+          .experience h3{
+        margin-top: 20px;
+        margin-left: 20px;
+       }
+   
+   .about-section .about-content .experience{
+            /* flex: 30  40 30%; */
+            min-width: 57%;
+            /* margin-top: 30px; */
+                  box-shadow: 3px 10px 50px 15px ;             
    }
         .row-heading .education{
        /* width: 100%; */
-      padding-right: 200px;  
+      padding-right: 100px;
+      background-color: #8b8181;
     }
 
     .education .timeline-item{
@@ -662,8 +676,28 @@ h3.my-profession{
     }
         .row-heading .experience{
        width: 50%;
+      background-color: #8b8181;
        padding-left: 60px;
     }
+
+
+
+    /* .scroll-text */
+
+.marquee{
+  /* width: 20%; */
+  /* overflow: hidden; */
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-70%); }
+}
+
+
+
 
         /* ===Services=== */
 
@@ -758,8 +792,8 @@ h3.my-profession{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  align-items: stretch;
-    box-shadow: 0 5px 20px rgb(0, 0, 0.1);
+  /* align-items: stretch; */
+    /* box-shadow: 0 5px 20px rgb(0, 0, 0.1); */
      width: 110%;
      height: 115vh; 
 }
