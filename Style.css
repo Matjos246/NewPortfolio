@@ -917,6 +917,18 @@ h3.my-profession{
     padding-top: 7px;
     padding-left: 100px;
 }
+
+
+.contact-section  .row-contact-wrapper {
+    flex: 0 0 25%;
+    width: 50px;
+    /* text-align:center; */
+       /* background-color: rgba(0, 0, 0, 0.1); 
+    background-color:rgb(226, 226, 188, 0.7); */
+    padding-top: 7px;
+    padding-left: 100px;
+}
+
 .contact-section  .row-contact{
     padding-left: 300px;
     /* margin-top: 40px;
