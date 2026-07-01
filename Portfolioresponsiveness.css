@@ -20,6 +20,8 @@
 }
 
 
+
+
 @media(max-width:1717px){
     .grid{
       max-width: 70%;
@@ -98,9 +100,24 @@
       /* background: none; */
   }
 
-  .service-item-inner{
-    /* width: 100%; */
+  .service-item{
+    width: 100%;
   }
+
+  .service-section .row{
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+      /* grid-template-columns: 1fr; */
+      width: 98%;
+      /* height: 300vh; */
+
+  }
+
+  .padd-20{
+    margin-top: 90px;
+  }
+
+
 }
 @media (min-width: 1131px) and (max-width: 1799px){
   .portfolio-grid{
@@ -231,6 +248,12 @@
    }
 }
 
+@media(width:1370px){
+  .row-contact{
+    min-width: 94vw;
+  }
+}
+
 @media(min-width:1348px) and (max-width:1370px){
     .row-heading {
       left: 0;
@@ -286,6 +309,8 @@
   
     max-width: 69vw; 
    }
+
+
 
 }
 
@@ -344,6 +369,12 @@
     }
 }
 
+@media(max-width:1195px){
+.experience{
+  max-width: 45%;
+}
+}
+
 @media(min-width:1170px){
   #Mobileview{
     display: none;
@@ -378,6 +409,34 @@
     .home-info{
       max-width: 80%;
     }
+}
+
+@media(max-width:1345px){
+  .row-heading{
+  display: grid;
+  }
+
+  .experience{
+    margin: 150px 0 0 80px;
+
+  }
+
+   .education{
+    margin: 150px 0 0 80px;
+  
+    height: 60vh;
+    width: 40vw;
+
+  }
+  .education .timeline-box{
+    justify-self: center;
+  
+  }
+
+  #Desktopview{
+    max-width: 92vw;
+  }
+
 }
 
 @media(min-width:1100px) and (max-width:1200px){
@@ -415,21 +474,112 @@
   }
 }
 
+
+@media(max-width:1000px){
+  #hideOnmobile{
+    display: none;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .main-content{
+   
+    /* background-color: yellowgreen; */
+  }
+
+  .home-section{
+    margin-left: 0;
+  }
+
+  .about-section {
+
+    margin-left: 70px;
+  }
+
+  .about-text p{
+    min-width: 85vw;
+  }
+
+  .service-section{
+    margin-left: -100px;
+  }
+
+  
+  .service-section {
+    /* padding-left: 2px; */
+   width: 110%;
+  }
+
+    .service-section .row {
+   column-gap: 120px;
+  }
+
+    .service-section .service-item{
+    /* padding-left: 2px; */
+   width: 140%;
+  }
+
+  .portfolio-section{
+    margin-left: -100px;
+  }
+  .portfolio-card{
+    max-width: 95%;
+  }
+
+  .Joasync_visions{
+        margin-left: -300px;
+        max-width: 400%;
+  }
+
+  .Joasync_details p{
+    width: 55em;
+    
+  }
+
+  .contact-section{
+      margin-left: -200px;
+  }
+
+  .education{
+    min-height: 500px;
+    width: 47vw;
+  }
+
+  
+
+  
+}
+
+
+
+@media(min-width:1000px){
+    .Mobile-Nav{
+      display: none;
+    }
+
+    #btn{
+      display: none;
+    }
+
+    #Menu{
+      display: none;
+    }
+
+
+}
+
 @media (max-width: 980px){
      .about-text p{
     max-width: 60vw;
   } 
 }
-
-
-
 @media (max-width: 1099px) {
     .grid{
       max-width: 60%;
     }
 }
-
-
 @media  (max-width: 1069px) {
     .about-text p{
         max-width: 67vw;
@@ -466,8 +616,5 @@
 }
 
 /* check */
-
-/*grid between 1100px - 1200px */
-
-
+/* .row-contact  1170px - 1336px */
 /* check */

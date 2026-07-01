@@ -21,30 +21,57 @@
   <link rel="stylesheet" href="/color-5.css" class="alternate-style" title="color-5" />
   <link rel="stylesheet" href="/style-switcher.css">
 </head>
-
 <body>
   <!-- Main container Start -->
   <div class="main-container">
     <!--Aside Start-->
-     <div class="aside">
+     <div class="aside "  id="hideOnmobile">
+      
       <div class="logo">
         <a href="">
           <span> Joasync
             Solutions</span>
         </a>
       </div>
-      <div class="nav-toggler">
+      <div class="nav-toggler" id="Menu">
         <span></span>
       </div>
-      <ul class="nav">
+      <ul class="nav ">
         <li><a href="#Home" class="active"><i class="fa fa-home"></i>Home</a></li>
         <li><a href="#About"><i class="fa fa-user"></i>About</a></li>
         <li><a href="#Services"><i class="fa fa-list"></i>Services</a></li>
         <li><a href="#Portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
         <li><a href="#Contact"><i class="fa fa-comments"></i>Contact</a></li>
+         <button id="btn"onclick=showSidebar()><img class="MenuBar"src="MenuBar.svg" alt="">
+          </button>
       </ul>
     </div>
     <!-- Aside End -->
+       <div class="Mobile-Nav">
+      <div class="logo">
+        <a href="">
+          <span> Joasync
+            Solutions</span>
+        </a>
+      </div>
+      <div class="nav-toggler" >
+        <span></span>
+      </div>
+      <ul class="navbar">
+        <li><a href="#Home" class="active"><i class="fa fa-home" ></i>Home</a></li>
+        <li><a href="#About"><i class="fa fa-user"></i>About</a></li>
+        <li><a href="#Services"><i class="fa fa-list"></i>Services</a></li>
+        <li><a href="#Portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+        <li><a href="#Contact"><i class="fa fa-comments"></i>Contact</a></li>
+      </ul>
+       <button class="btn"onclick=showSidebar()>
+        <img class="MenuBar"src="MenuBar.svg" alt="">
+          </button>
+           <!-- <div class="nav-toggler" id="Menu2">
+        <span> <img class="MenuBar"src="" alt=""></span>
+      </div> -->
+
+    </div>
     <!-- Main content start -->
     <div class="main-content">
       <!-- Home Section start -->
@@ -92,8 +119,6 @@
                 I'm creative and detail-oriented Frontend Developer with strong skills in building responsive and user-friendly web applications using HTML, CSS, JavaScript, and React.js. Currently advancing into Full Stack Development (MERN STACK: MongoDB, Express.js, React, Node.js) to deliver complete end-to-end solutions. Passionate about solving problems with code, improving user experience, and contributing to innovative projects.  <br> <br>
             My focus is on building practical and modern solutions that combine functionality, performance, and user experience, basically to bridge the gap between hardware and software engineering and thats how Joasync Solutions was founded — a vision that inspired the creation of <strong style="color:rgb(180, 117, 8); font-size: 20px;">Joasync Solutions.</strong> 
 Resourceful and technically skilled graduate with a strong background in ICT systems, maintenance engineering, and technical support. Experienced in computer hardware troubleshooting, equipment setup, and system upgrades. Passionate about technical innovation, preventive maintenance, and learning under experienced engineers. Currently expanding expertise through practical ICT and software engineering in web development to build a long-term career in technical and maintenance engineering.
-
-
 Currently, I am growing my expertise toward becoming a full-stack and systems-oriented engineer capable of delivering complete end-to-end solutions across software and hardware domains.
                   </p>
                 </div>
@@ -457,7 +482,7 @@ My goal is to bridge the gap between design and engineering by building websites
             </div>
             <!-- ===Service items  End=== -->
             <!-- ===Service items  Start=== -->
-            <div class="service-item padd-15">
+            <div class="service-item padd-15 padd-20">
               <div class="service-item-inner">
                 <div class="icon">
                   <i class="fa fa-laptop-code"></i>
@@ -558,8 +583,6 @@ Whether you are a beginner or someone looking to improve your technical skills, 
       </section>
     </div>
     <!-- ====Services sections End ===-->
- 
-
    <!-- ===Portfolio sections START===-->
  <section class="portfolio-section">
   <div class="container">
@@ -695,7 +718,6 @@ Whether you are a beginner or someone looking to improve your technical skills, 
         </div>
       </div>
     </section>
-
     <!-- ===Contact Section Start=== -->
     <div class="contact-section">
       <div class="container">
@@ -719,8 +741,6 @@ Whether you are a beginner or someone looking to improve your technical skills, 
               <h4>Call us on</h4>
               <p> +234 81-07-930-725</p>
             </div>
-
-
           </div>
           <!-- ==contact-info-item END== -->
 
@@ -871,9 +891,20 @@ Whether you are a beginner or someone looking to improve your technical skills, 
     </div>
   </div>
   <!-- JS files -->
+
+   <script>
+  function showSidebar(){
+    const sidebar = document.querySelector(".navbar")
+    sidebar.style.display = "flex"
+
+  }
+    function hideSidebar(){
+    const sidebar = document.querySelector(".navbar")
+    sidebar.style.display = "none"
+  }
+ </script>
   <script src="/script.js"></script>
   <script src="/style-switcher.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
     integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -889,5 +920,4 @@ Whether you are a beginner or someone looking to improve your technical skills, 
     });
   </script>
 </body>
-
 </html>
