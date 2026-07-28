@@ -1,11 +1,12 @@
 .style-switcher{
     position: fixed;
+    /* position:absolute; */
     right: 0;
     top: 60px;
-    padding: 15px;
-    width: 150px;
+    padding: 1px;
+    width: 140px;
     border: 1px solid var(--skin-color);
-    z-index: 101;
+    /* z-index: 101; */
     border-radius: 5px;
     transition: all 0.3s ease;
     transform: translateX(100%);
@@ -24,7 +25,7 @@
     color: #ffffff;
     right: 100%;
     border: 1px solid brown;
-    margin-right: 25px;
+    /* margin-right: 25px; */
     cursor: pointer;
     transition: all 0.4s ease;
     border-radius: 50%;

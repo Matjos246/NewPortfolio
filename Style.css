@@ -147,6 +147,8 @@
     .btn:hover{
         transform: scaleX(1.05);
          transition: all 2s ease;
+         color: white;
+         text-shadow: #e9e9e9;
     }
 
     .portfolio-grid-dark{
@@ -169,9 +171,17 @@
         align-items: center;
         border-right: 1px solid var(--bg-black-50);
   /* border-right: 1px solid brown; */
+      position: fixed;
+    top: 0;
+    right: 0;
+    /* transform: translateX(100%); */
+    transition: transform .3s ease;
     }
 
 
+.aside.active{
+    transform: translateX(0);
+}
     .aside .logo{
         position: absolute;
         top: 50px;
@@ -292,20 +302,22 @@
     /* Mobile-nav */
         .Mobile-Nav{
         background: #f5f3f3;
-        /* left: 0;
-        padding: 30px;
-        top: 0; */
-        height: 18vh;
-        /* z-index: 10; */
-        /* position: fixed; */
         display: flex;
         justify-content: space-between;
-        /* align-items: center; */
         border-right: 1px solid var(--bg-black-50);
-  /* border-right: 1px solid brown; */
+  border-right: 1px solid brown;
+    top: 0;
+    right: 0;
+    /* Z-index  is define to make a element of component to be above every other component  */
+    z-index: 999;  
+    backdrop-filter: blur(20px);
+    background-color: rgb(225, 225, 225,0.2);
+/* position: fixed; */
+    top: 0;
+    transition: left 0.3s ease;
+    /* width: 80%;
+    max-width: 320px; */
     }
-
-
         .Mobile-Nav .logo{
         position: absolute;
         top: 22px;
@@ -313,9 +325,7 @@
         font-size: 30px;
         text-transform: capitalize;
         width: 30%;
-       
     }
-
      .Mobile-Nav .logo a{
          
       color: var(--text-black-900);
@@ -326,7 +336,6 @@
       position: relative; 
     }
       .Mobile-Nav .logo a span{
-
       font-family: 'Clicker Script', cursive;
       font-family: 40px;
       color: rgb(70, 35, 35);
@@ -356,21 +365,35 @@
     .navbar{
         display: flex;
         flex-direction: column;
-        width: 200px;
-        background: #926868;
-        padding: 50px;
+        width: 5000vw;
+     z-index: 1000;
+        padding: 150px 0 50px 50px;
         height: 100vh;  
-        float: right; 
+        /* float: right;  */
+        margin-left: 825px;
+            background-color: rgba(0, 0, 0, 0.03); 
+       /* backdrop-filter: blur(20px); */
+    background-color: rgb(225, 225, 225,0.2);
+    position: fixed;
+  
+right: 0;
+top: 0;
+height: 100vh;
+  /* This means:
+
+On large screens, it won't exceed 320px.
+On small screens, 
+it will shrink to 80% of the viewport width. */
+    width: 80%;
+    max-width: 220px;
+    }
+         .navbar li a.active{
+        color: var(--skin-color); 
     }
 
     .navbar li{
-        
+        padding-top: 50px;
     }
-
-
-
-
-
     /* home */
 .home-section{
     /* height: 70vh; */
@@ -535,31 +558,23 @@ h3.my-profession{
      padding: 50px ;
      /* margin-left: 4px; */
      font-size: 20px;    
-
-
 }
-
-
 .about-section .about-content .personal-info .buttons{
     /* margin-top: 30px; */
     display: flex;
     width: 800px;
 }
-
 .about-section .about-content .personal-info .buttons .btn{
     margin-right: 15px;
     margin-top: 10px;
 } 
-
 .About_phrase{
     padding-block: 10px;
 }
-
 .info-1, .info-2{
     margin: 0 10px;
     line-height: 3vh;
 }
-
 .about-section .about-content .Skills{
         flex: 0 0 40%;
     /* max-width: 40%;*/
@@ -583,7 +598,6 @@ h3.my-profession{
     padding-bottom: 30px;
     /* margin-bottom: 20px; */
  }
-
  .about-section .about-content .Skills .skill-item h5{
     line-height: 40px;
     font-weight: 600;
@@ -598,9 +612,7 @@ h3.my-profession{
     border-radius: 5px;
     width: 100%;
     position: relative;
-
   }
-
    .about-section .about-content .Skills .skill-item .progress .progress-in{
     position: absolute;
     left: 0;
@@ -617,7 +629,6 @@ h3.my-profession{
     font-weight: bolder;
     font-size: 15px;
    }
-   
    .about-section .about-content h3.title{
             font-size: 25px;
             margin-bottom: 30px;
@@ -629,7 +640,6 @@ h3.my-profession{
             flex: 0 0 100%;
            
    }
-
       .about-section .about-content .timeline{
         padding: 30px 15px;
         /* border: 1px solid black; */
@@ -705,29 +715,21 @@ h3.my-profession{
        padding-left: 100px;
        padding-block: 30px;
      /* border: solid thick red; */
-   
-  
     }
-
-  
-
        .about-section .about-content .education{
           /* flex: 30  40 30%; */
             max-width: 55%;
             /* margin-top: 30px; */
                   box-shadow: 3px 10px 40px 20px ;   
        }
-
        .education h3{
         margin-top: 20px;
         margin-left: 20px;
        }
-
           .experience h3{
         margin-top: 20px;
         margin-left: 20px;
        }
-   
    .about-section .about-content .experience{
             /* flex: 30  40 30%; */
             min-width: 57%;
@@ -739,7 +741,6 @@ h3.my-profession{
       padding-right: 100px;
       background-color: #8b8181;
     }
-
     .education .timeline-item{
       
     }
@@ -765,9 +766,6 @@ h3.my-profession{
   to { transform: translateX(-70%); }
 }
 
-
-
-
         /* ===Services=== */
 
          .service-section{
@@ -776,8 +774,14 @@ h3.my-profession{
        flex-wrap: wrap; */
       line-height: 25px;
       margin: 90px 200px;
+    
     }
-        .container{
+
+#service-section{
+  margin: 0;
+  padding: 0;
+}
+ .container{
                 padding-bottom: 40px;
         }
     .service-item{
@@ -942,15 +946,15 @@ h3.my-profession{
                     background-color: rgba(0, 0, 0, 0.1); 
                     padding-left: 10px;
             }
-
             .details_list{
                 padding: 20px;
                 margin: 10px;
-                font-size: 15px;
+                font-size: 22px;
+                font-style: italic;
   
             }
             .details_list li {
-                font-size: 17px;
+                font-size: 20px;
             }
             .brand{
                 font-family: cursive;
@@ -964,6 +968,8 @@ h3.my-profession{
 .contact-section .section-title{
     margin-left: 300px;
 }
+
+
 .contact-title{
     color: var(--skin-color);
     text-align: right;
@@ -1073,4 +1079,8 @@ h3.my-profession{
 .contact-form .btn{
     height: 50px;
     padding: 0 50px;
+}
+
+.btnn{
+    background-color: #918d8d;
 }
