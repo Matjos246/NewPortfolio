@@ -816,11 +816,7 @@ h3.my-profession{
        padding-top: 10px;
        
     }
-    .service-item-inner:hover{
-        box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-        transform: scale(1.1 ,1.1);
-
-    }
+  
     .service-item-inner .icon{
         height: 60px;
         width: 60px;
@@ -969,6 +965,8 @@ h3.my-profession{
     margin-left: 300px;
 }
 
+.contact-title-wrapper{
+}
 
 .contact-title{
     color: var(--skin-color);

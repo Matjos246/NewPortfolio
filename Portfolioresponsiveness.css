@@ -62,9 +62,7 @@
 @media(max-width:1435px) {
          .row-contact{
       max-width: 125%;
-
     }
-
     .contact-info-item .contact-info{
   
         /* padding-right: 15px; */
@@ -341,6 +339,19 @@
       .buttons .hire-me {
            width: 150px;
     }
+     .contact-section .container .contact-title-wrapper .contact-title {
+          width: 26%;
+          margin-left: 700px;
+      }
+          .contact-section .container .contact-title-wrapper .contact-sub-title {
+          /* max-width: 100%; */
+          margin-left: -200px;
+          /* background-color: yellowgreen; */
+      }
+       .contact-section .container .contact-title-wrapper{
+             width: 100%;
+          /* margin-left: 700px; */
+       }
 }
 @media(max-width:1195px){
 .experience{
@@ -541,9 +552,9 @@
   .day-night{
     position: fixed;
   }
-
+  /* Margin issue */
   .card-slider{
-    margin-top: 500px;
+    /* margin-top: 500px; */
   }
 
   #service-section .service-row .row .card-item .service-item-inner{
@@ -553,11 +564,9 @@
   }
 
   .main-container{
-    background-color: rgb(52, 211, 12);
-    height: 850vh;
+    /* background-color: rgb(52, 211, 12); */
+    /* height: 850vh; */
   }
-
-  
 }
 @media (max-width: 980px){
      .about-text p{
@@ -596,6 +605,12 @@
       max-width: 97vw;
     }
 }
+
+@media(max-width:930px){
+.row-heading{
+  display: none;
+}
+}
 @media(max-width:910px){
     .contact-title-wrapper{
       margin-left: -500px; 
@@ -607,6 +622,43 @@
      .contact-title-wrapper h3{
    color: var(--skin-color);
    font-size: 20px;
+    }
+
+    
+       .contact-section .container .contact-title-wrapper{
+             width: 100%;
+          margin-left: -90px;
+       }
+
+}
+
+@media(width:900px){
+  .grid{
+    padding-bottom: 100px;
+  }
+}
+@media(max-width:900px){
+  .service-section{
+    display: none;
+  }
+}
+
+@media(max-width:899px){
+  #service-section{
+   
+  margin-top: 50px;
+  }
+}
+
+
+@media(min-width:900px){
+  #service-section{
+    display: none;
+  }
+
+    .service-item-inner:hover{
+        box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+        transform: scale(1.1,1.1);
     }
 }
 @media (width: 874px){
@@ -634,10 +686,16 @@
       padding-top: 20px;
     }
 }
-@media (max-width:842px){
-    .home-row .home-img{
-      padding-top: 20px;
-    }
+@media (max-width:830px){
+   .contact-section .container .row .section-title  #Contact{
+   margin-left: -50px;
+   }
+
+   .contact-title-wrapper .contact-title{
+
+     background-color: aqua;
+     
+        }
 }
 
 @media (min-width:755px) and (max-width:810px){
@@ -665,6 +723,10 @@
   }
 }
 /* Mobile */
+@media (width: 720px){
+    
+}
+
 @media (width: 700px){
   .portfolio-grid{
     grid-template-columns: 1fr;
@@ -674,7 +736,6 @@
      max-width: 40vw;
   }
 }
-
  @media(max-width:690px){
        .grid{
      /* max-width: 39vw; */
@@ -704,6 +765,3 @@
     width: 40vw;
   }
     }
-/* check */
-/* .row-contact  1170px - 1336px */
-/* check */
