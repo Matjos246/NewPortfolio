@@ -480,7 +480,18 @@
 
   .home-section{
     margin-left: 0;
+    }
+
+  .home-section .home-row{
+  
+    margin-left: 100px;
   }
+
+   .home-row .home-img img{
+
+      margin-left: -90px;
+    
+    }
 
   .about-section {
 
@@ -605,7 +616,6 @@
       max-width: 97vw;
     }
 }
-
 @media(max-width:930px){
 .row-heading{
   display: none;
@@ -707,6 +717,14 @@
 
 }
 
+@media (max-width:830px){
+  .home-img img{
+    padding-top: 50px;
+
+  }
+
+}
+
 @media (max-width:796px){
 
    .aside .logo a::before{
@@ -722,7 +740,42 @@
  }
 }
 
+
+/* Content responsiveness */
+
+
+@media(max-width:780px){
+ .main-container .Mobile-Nav .logo{
+  /* background-color: rgb(216, 202, 11); */
+ }
+
+.main-container .Mobile-Nav .logo a::before{
+      
+          bottom: 5px;
+          left: -20px;
+          
+    }
+        .main-container .Mobile-Nav .logo a::after{
+   
+          top: 15px;
+          right: -7px;
+    }
+
+}
+
+/* Content responsiveness */
+
+
 @media (max-width:750px){
+
+   .home-row .home-info p{
+     width: 70vw;
+    }
+    .home-section .home-row{
+      margin-left: -50px;
+      margin-top: -70px;
+  
+    }
 
     .service-section{
           /* background-color: rgb(41, 19, 231); */
@@ -732,6 +785,7 @@
           /* background-color: brown; */
          margin-left: -110px;
         }
+
 
 
   .grid{
@@ -823,12 +877,33 @@
 
 }
 
+
 /* Mobile */
-@media (width: 720px){
-    
+
+
+@media (width: 715px){
+    .home-section .home-row{
+      min-width: 140%;
+    }
+
+     .home-section{
+      /* background-color: chartreuse; */
+     }
+
+    .about-section{
+      /* background-color: chocolate; */
+        margin-top: -100px;
+    }
 }
 
-@media (width: 700px){
+@media (width: 720px){
+        .home-section .home-row  p{
+      min-width: 100%;
+    }
+}
+
+
+@media (max-width: 700px){
   /* .portfolio-grid{
     grid-template-columns: 2fr;
   } */
@@ -842,9 +917,67 @@
   }
 }
 
-@media(max-width){
 
 
+@media(max-width:698px){
+ .main-container .Mobile-Nav .logo{
+  /* background-color: rgb(216, 202, 11); */
+ }
+
+ .main-container .Mobile-Nav .logo a span{
+  /* background-color: yellowgreen; */
+  margin-left: -10px;      
+    }
+
+.main-container .Mobile-Nav .logo a::before{
+      
+          bottom: 5px;
+          /* left: -25px; */
+          
+    }
+        .main-container .Mobile-Nav .logo a::after{
+   
+          top: 5px;
+          right: 5px;
+    }
+
+}
+@media(max-width:665px){
+ .main-container .Mobile-Nav .logo{
+  /* background-color: rgb(216, 202, 11); */
+ }
+
+ .main-container .Mobile-Nav .logo a span{
+  /* background-color: yellowgreen; */
+  margin-left: -15px;      
+    }
+
+.main-container .Mobile-Nav .logo a::before{
+      
+          bottom: 5px;
+          left: -15px;
+          
+    }
+        .main-container .Mobile-Nav .logo a::after{
+   
+          top: 16px;
+          right: 20px;
+    }
+
+}
+
+@media(max-width:675px){
+  .service-section .service-row .row{
+  display: flex;
+  flex-direction: column;
+   margin-left: 60px;
+
+     /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+
+
+
+  }
 }
  @media(max-width:690px){
        .grid{
@@ -877,15 +1010,154 @@
     }
 /* =========CONTENT:NONE ISSUE============ */
 @media(max-width:674px){
-    .aside .logo a::before{
-    content: none;
-    
+    .main-container .Mobile-Nav .logo a::before{
+    /* content: none; */
    }
 
-    .aside .logo a::after{
-    content: none;
+  .main-container .Mobile-Nav .logo a::after{
+    /* content: none; */
    }
 }
+
+@media(max-width:648px){
+ .main-container .Mobile-Nav .logo{
+  /* background-color: rgb(216, 202, 11); */
+ }
+
+ .main-container .Mobile-Nav .logo a span{
+  /* background-color: yellowgreen; */
+  margin-left: -25px;      
+    }
+
+.main-container .Mobile-Nav .logo a::before{
+      
+          bottom: 4px;
+          left: -15px;
+          
+    }
+        .main-container .Mobile-Nav .logo a::after{
+   
+          top: 10px;
+          right:25px;
+    }
+
+}
+
+@media(max-width:643px){
+ .main-container .Mobile-Nav .logo{
+  /* background-color: rgb(216, 202, 11); */
+ }
+
+.main-container .Mobile-Nav .logo a::before{
+      
+          bottom: 35px;
+          left: -15px;
+          
+    }
+        .main-container .Mobile-Nav .logo a::after{
+   
+          top: 15px;
+          right:-100px;
+    }
+
+}
+
+@media(max-width:630px){
+    .grid .personal-info .row .info-1 .info-item span,
+     .grid .personal-info .row .info-2 .info-item span
+    {
+      width: 100%;
+        padding-left: 100px;
+    }
+
+     .grid .personal-info .row  .info-item p{
+    
+     }
+
+     .contact-section .container .row .contact-form{
+      /* background-color:#525333; */
+      margin-left: -50px;
+
+     }
+}
+
+
+@media (width: 620px){
+    .contact-section .container .row{
+     margin-left: -15px;
+     /* padding-left: 0; */
+    }
+
+       .contact-section .container .contact-title-wrapper{
+   margin-left: -160px;
+   
+    }
+}
+
+@media(max-width:615px){
+     .main-container .Mobile-Nav .logo a span{
+  /* background-color: yellowgreen; */
+  /* margin:-36px;       */
+    }
+
+
+.main-container .Mobile-Nav .logo a::before{
+      
+          bottom: 45px;
+          left: -15px;
+          
+    }
+        .main-container .Mobile-Nav .logo a::after{
+   
+          top: 15px;
+          right: -125px;
+    }
+}
+
+
+@media(max-width:581px){
+     .main-container .Mobile-Nav .logo{
+  /* background-color: yellowgreen; */
+max-width: 300px;
+
+    }
+
+.main-container .Mobile-Nav .logo a::before{
+      
+          bottom: 45px;
+          left: -15px;
+            /* content: none; */
+    }
+        .main-container .Mobile-Nav .logo a::after{
+   
+          top: 15px;
+          right: -125px;
+            /* content: none; */
+    }
+
+           .main-container .Mobile-Nav .btn{
+              margin-right: 20px;
+    }
+
+      .contact-section .container .row .contact-form{
+        background-color: blueviolet;
+        margin-left: -100px;
+     
+      }
+
+
+  }
+
+@media(max-width:530px){
+     .grid .personal-info .row .info-1 .info-item span,
+     .grid .personal-info .row .info-2 .info-item span
+    {
+      width: 100%;
+        padding-left: 70px;
+    }
+}
+
+
 
 /* 
     .service- {
