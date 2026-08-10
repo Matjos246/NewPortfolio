@@ -973,6 +973,9 @@ h3.my-profession{
             }
           /* ==Joasync_visions END== */
          /*=== CONTACT START===*/
+
+
+
 .contact-section .section-title{
     margin-left: 300px;
 }
@@ -1038,12 +1041,19 @@ h3.my-profession{
 .contact-info:hover{
 
 }
-.contact-form{
+
+/* .contact-section .section-title{
+    margin-left: 300px;
+} */
+
+.contact-section .row .contact-form{
     justify-content: center;
     align-items: center;
     padding: 100px 300px;   
     flex: 0 0 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
+     margin-left: 400px;
+    /* background-color: #000; */
 }
 .contact-form .col-6{
         flex: 0 0 50%;
