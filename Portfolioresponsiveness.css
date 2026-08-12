@@ -856,10 +856,11 @@
         .contact-section .container  .contact-title-wrapper  .contact-title{
         margin-left: 500px;
         }
-
+/* 
           .contact-section .container  .contact-title-wrapper  .contact-sub-title{
         margin-left: -550px;
-        }
+        background-color: rgb(41, 19, 231);
+        } */
 }
 
 @media (min-width:755px) and (max-width:810px){
@@ -996,12 +997,8 @@
 .contact-section{
   /* background-color: brown; */
   margin-left: -200px;
-
 }
-
-
 .contact-title-wrapper .contact-sub-title{
-     
         }
         .contact-section .container .row .section-title #Contact {
         margin-left: -70px;
@@ -1009,20 +1006,14 @@
         .contact-section .container  .contact-title-wrapper  .contact-title{
         margin-left: 500px;
         }
-
           .contact-section .container  .contact-title-wrapper  .contact-sub-title{
         margin-left: -550px;
         }
-  
 .contact-section .container .row .contact-form{
   margin-left: 100px;
-  /* background-color: blueviolet; */
-  
+  /* background-color: blueviolet; */ 
 }
-
 }
-
-
 @media(max-width:665px){
  .main-container .Mobile-Nav .logo{
   /* background-color: rgb(216, 202, 11); */
@@ -1248,6 +1239,133 @@ max-width: 300px;
         padding-left: 70px;
     }
 }
+
+
+@media(max-width:390px){
+
+
+  .main-container .Mobile-Nav .logo{
+  /* background-color: rgb(216, 202, 11); */
+ }
+
+ .main-container .Mobile-Nav .logo a span{
+  /* background-color: yellowgreen; */
+  margin-left: -10px;      
+    }
+
+.main-container .Mobile-Nav .logo a::before{
+      
+          bottom: 5px;
+          /* left: -25px; */
+          
+    }
+        .main-container .Mobile-Nav .logo a::after{
+   
+          top: 5px;
+          right: 5px;
+    }
+
+
+  .Mobile-Nav .logo {
+  
+    min-width: 50%;
+  }
+    .home-row  .home-img img{
+      width: 110%;
+      margin-top: -30px;
+        padding-right: 100px;
+    }
+
+    .home-section{
+
+    }
+
+    .about-section{
+      margin-top: -100px;
+    }
+
+    .home-section .home-row .home-info #Home{
+        margin-left: 50px;
+      width: 100vw;
+    }
+
+    .grid .personal-info .row .info-1 p,
+      .grid .personal-info .row .info-2 p {
+      margin-left: -40px;
+      /* width: 600%; */
+    }
+
+    
+    .grid .personal-info .row .info-1 p span,
+      .grid .personal-info .row .info-2 p span{
+
+      margin-left: -60px;
+    }
+
+    .row .buttons a{
+      /* background-color: rgb(188, 233, 24); */
+      margin-left: 50px;
+      max-width: 35vw;
+    }
+
+       .row .buttons #CV{
+      background-color: rgb(226, 43, 58);
+      margin-left: 65px;
+      max-width: 48vw;
+    }
+    .service-section .section-title #Services{
+
+      margin-left: 100px;
+    }
+
+        .service-section{
+      /* width: 100%; */
+      /* background-color: brown; */
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .service-section .row .service-item{
+      max-width: 70%;
+
+      margin-left: 70px;
+    }
+
+
+    .contact-section{
+      /* background-color: brown; */
+      width: 100%;
+    }
+
+        .contact-section .container .row .section-title #Contact{
+      margin-left: -120px;
+    }
+
+      .contact-section .container .contact-title-wrapper .contact-title{ 
+           margin-left: -185px;
+           min-width: 100%;
+    }
+
+        .contact-section .container .contact-title-wrapper .contact-sub-title{ 
+           margin-left: -600px;
+         
+    }
+
+      .contact-section .container .row .contact-form{
+      /* background-color: brown; */
+      max-width: 250vw;
+    }
+
+         .contact-section .container .row .contact-form .row .form-group .btn{
+            margin-left: 50px;
+    }
+
+             .contact-section .container .row .contact-form .row .form-group .btn:hover{
+          transition: all 0.3s ease;
+    }
+
+  }
 
 /* 
     .service- {
