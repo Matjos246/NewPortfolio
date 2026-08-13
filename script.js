@@ -54,3 +54,7 @@ const swiper = new Swiper('.slider-wrapper',{
     sidebar.style.display = "none"
   }
 
+console.log("Screen width:", window.screen.width);
+console.log("Viewport width:", window.innerWidth);
+console.log("Viewport height:", window.innerHeight);
+console.log("Device Pixel Ratio:", window.devicePixelRatio);
