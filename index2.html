@@ -98,5 +98,26 @@ function screen(){
     mywidth=window.innerWidth;
     document.getElementById("size").innerHTML= "width :" + mywidth+"px"
 }
+
+
+ document.body.insertAdjacentHTML(
+        "afterbegin",
+        `
+        <div id="device-info" style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+            background: red;
+            color: white;
+            padding: 10px;
+            font: 14px Arial;
+        ">
+            Width: ${window.innerWidth}px<br>
+            Height: ${window.innerHeight}px<br>
+            DPR: ${window.devicePixelRatio}
+        </div>
+        `
+    );
 </script>
 </html> 

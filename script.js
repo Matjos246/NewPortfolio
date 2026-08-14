@@ -60,22 +60,4 @@ console.log("Viewport height:", window.innerHeight);
 console.log("Device Pixel Ratio:", window.devicePixelRatio);
 
 
-    document.body.insertAdjacentHTML(
-        "afterbegin",
-        `
-        <div id="device-info" style="
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 99999;
-            background: red;
-            color: white;
-            padding: 10px;
-            font: 14px Arial;
-        ">
-            Width: ${window.innerWidth}px<br>
-            Height: ${window.innerHeight}px<br>
-            DPR: ${window.devicePixelRatio}
-        </div>
-        `
-    );
+   
