@@ -1078,6 +1078,34 @@ h3.my-profession{
      margin-left: 400px;
     /* background-color: #000; */
 }
+
+.contact-section .container .Media{
+    margin-left: 300px;
+  /* float: inline-end; */
+
+
+}
+
+
+
+.contact-section .container .Media a i{
+    /* margin-left: 5px; */
+      /* background-color: #7AA6B3; */
+      color: #2d3b3f;
+      font-size: 1.5rem;
+}
+
+.contact-section .container .Media a{
+    margin-left: 20px;
+      /* background-color: #7AA6B3; */
+      color: #e9e0db;  
+}
+
+.contact-section .container .Media a:hover{
+   
+      background-color: #928b8b;
+      color: red;  
+}
 .contact-form .col-6{
         flex: 0 0 50%;
         max-width: 50%;    
