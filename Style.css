@@ -321,6 +321,218 @@
         /* animation: none; */
     }
 }
+.home > *:not(.hero-motion-bg) {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+/* =========================================
+   JOASYNC SOLUTIONS
+   ANIMATED TECHNOLOGY BACKGROUND
+========================================= */
+
+.home {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+
+/* -----------------------------------------
+   BACKGROUND CONTAINER
+----------------------------------------- */
+
+.hero-motion-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+/* -----------------------------------------
+   DIGITAL GRID
+----------------------------------------- */
+
+.tech-grid {
+    position: absolute;
+    inset: -50%;
+    
+    background-image:
+        linear-gradient(
+            rgba(0, 137, 203, 0.06) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(244, 123, 58, 0.06) 1px,
+            transparent 1px
+        );
+
+    background-size: 55px 55px;
+
+    transform: rotate(-8deg);
+
+    animation: moveGrid 25s linear infinite;
+}
+
+
+/* -----------------------------------------
+   MOVING GRADIENT ORBS
+----------------------------------------- */
+
+.gradient-orb {
+    position: absolute;
+    border-radius: 50%;
+    
+    filter: blur(80px);
+
+    will-change: transform;
+}
+
+
+/* Orange glow */
+
+.orb-one {
+    width: 380px;
+    height: 380px;
+
+    background: rgba(244, 123, 58, 0.20);
+
+    top: -120px;
+    left: -100px;
+
+    animation: orangeFloat 16s ease-in-out infinite alternate;
+}
+
+
+/* Blue glow */
+
+.orb-two {
+    width: 450px;
+    height: 450px;
+
+    background: rgba(0, 137, 203, 0.18);
+
+    right: -150px;
+    top: 5%;
+
+    animation: blueFloat 20s ease-in-out infinite alternate;
+}
+
+
+/* Central subtle glow */
+
+.orb-three {
+    width: 300px;
+    height: 300px;
+
+    background: rgba(0, 137, 203, 0.10);
+
+    left: 40%;
+    bottom: -180px;
+
+    animation: centerFloat 18s ease-in-out infinite alternate;
+}
+
+
+/* -----------------------------------------
+   GRID MOVEMENT
+----------------------------------------- */
+
+@keyframes moveGrid {
+
+    0% {
+        transform:
+            translate3d(0, 0, 0)
+            rotate(-8deg);
+    }
+
+    100% {
+        transform:
+            translate3d(55px, 55px, 0)
+            rotate(-8deg);
+    }
+}
+
+
+/* -----------------------------------------
+   ORANGE ANIMATION
+----------------------------------------- */
+
+@keyframes orangeFloat {
+
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(120px, 80px, 0);
+    }
+
+    100% {
+        transform: translate3d(40px, 180px, 0);
+    }
+}
+
+
+/* -----------------------------------------
+   BLUE ANIMATION
+----------------------------------------- */
+
+@keyframes blueFloat {
+
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(-100px, 70px, 0);
+    }
+
+    100% {
+        transform: translate3d(-40px, -80px, 0);
+    }
+}
+
+
+/* -----------------------------------------
+   CENTER ANIMATION
+----------------------------------------- */
+
+@keyframes centerFloat {
+
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(80px, -70px, 0);
+    }
+
+    100% {
+        transform: translate3d(-70px, -20px, 0);
+    }
+}
+
+
+/* -----------------------------------------
+   REDUCED MOTION
+----------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .tech-grid,
+    .gradient-orb {
+        /* animation: none; */
+    }
+}
+
 
     .row{
         display: flex;
@@ -641,14 +853,15 @@ margin-top: 30px;
     color: var(--text-black-900);
     /* top>right>bottom>left always in clockwise order both margin*/
     /* margin: 300px 200px; */
-    margin: 200px 200px 200px 250px ;
+    margin: 120px 200px 200px 250px ;
     width: 100%;
-    /* background-color: #000; */
+    /* background-color: #a70c0c; */
     /* display: flex; */
 }
         .home-row{
 
             display: flex;
+            /* background-color: #151515; */
         }
 .home-section .home-info{
     flex: 0 0 40%;

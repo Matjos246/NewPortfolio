@@ -486,6 +486,15 @@
       display: none;
     }
 
+      .home-section{
+        /* margin-top: 5px; */
+      }
+
+        .about-section{
+          margin-top: -200px;
+      }
+
+
 }
 @media(max-width:1000px){
   #hideOnmobile{
@@ -503,6 +512,7 @@
 
   .home-section{
     margin-left: 0;
+    margin-top: 5%;
     }
 
   .home-section .home-row{
