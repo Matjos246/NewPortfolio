@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="/color-4.css" class="alternate-style" title="color-4" />
   <link rel="stylesheet" href="/color-5.css" class="alternate-style" title="color-5" />
   <link rel="stylesheet" href="/style-switcher.css">
+  <link rel="stylesheet" href="/chatbot.css">
 </head>
 
 <script>
@@ -1081,19 +1082,105 @@ At Joasync Solutions, we offer structured, hands-on training in technology, web 
       <span class="color-5" onclick="setActiveStyle('color-5')"></span>
     </div>
   </div>
+
+
+<!-- ================================
+     JOASYNC AI ASSISTANT
+================================ -->
+
+<!-- Floating Button -->
+
+<button class="joasync-chat-button">
+  💬
+</button>
+<!-- Chatbot -->
+
+<div class="joasync-chatbox">
+  <!-- HEADER -->
+  <div class="joasync-chat-header">
+    <div class="joasync-ai-info">
+      <div class="joasync-ai-avatar">
+        🤖
+      </div>
+      <div>
+
+        <div class="joasync-ai-name">
+
+          Joasync AI Assistant
+
+        </div>
+        <div class="joasync-ai-status">
+          Online • Ready to help
+        </div>
+
+      </div>
+    </div>
+    <button class="joasync-close">
+      ×
+    </button>
+  </div>
+  <!-- MESSAGES -->
+
+  <div class="joasync-chat-messages">
+
+
+    <div class="joasync-message joasync-bot">
+
+      Hello! 👋 Welcome to Joasync Solutions.
+      <br><br>
+      I can help you learn about our services, website development, software solutions, computer repairs, and training.
+
+      <br><br>
+
+      How can I help you today?
+
+    </div>
+  </div>
+  <!-- QUICK REPLIES -->
+  <div class="joasync-quick-replies">
+    <button class="joasync-quick-btn">
+      Website Development
+    </button>
+    <button class="joasync-quick-btn">
+      Software Development
+    </button>
+    <button class="joasync-quick-btn">
+      Laptop Repairs
+    </button>
+    <button class="joasync-quick-btn">
+      Training
+    </button>
+  </div>
+  <!-- INPUT -->
+  <div class="joasync-chat-input">
+    <input
+      type="text"
+      class="joasync-user-input"
+      placeholder="Type your message...">
+    <button class="joasync-send">
+      ➤
+    </button>
+  </div>
+</div>
+<!-- JOASYNC CHATBOT FILES -->
+<script src="chatbot.js"></script>
   <!-- JS files -->
-   <!-- <script>
+   <script>
   function showSidebar(){
     const sidebar = document.querySelector(".navbar")
     sidebar.style.display = "flex"
   }
-    function hideSidebar(){
+  function hideSider(){
     const sidebar = document.querySelector(".navbar")
-    sidebar.style.display = "none"
+    sidebar.style.display="none"
   }
 
- </script> -->
-  
+  //   function hideSidebar(){
+  //   const sidebar = document.querySelector(".navbar")
+  //   sidebar.style.display = "none"
+  // }
+
+ </script>
   <script src="/style-switcher.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
     integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
@@ -1102,7 +1189,7 @@ At Joasync Solutions, we offer structured, hands-on training in technology, web 
   <!-- typed.js -->
   <!-- Setup and start animation --> 
   <script>
-    var typed = new Typed(".typing", {
+    var typed = new Typed(".typing",{
       strings: ['Technopreneur', 'Hardware Engineer', 'Graphics Designer', 'Software Engineer', 'Web developer', 'Software Developer'], 
       typeSpeed: 50,
       BackSpeed: 60,

@@ -45,14 +45,14 @@ const swiper = new Swiper('.slider-wrapper',{
     }
 });
 
-  function showSidebar(){
-    const sidebar = document.querySelector(".navbar")
-    sidebar.style.display = "flex"
-  }
-    function hideSidebar(){
-    const sidebar = document.querySelector(".navbar")
-    sidebar.style.display = "none"
-  }
+//   function showSidebar(){
+//     const sidebar = document.querySelector(".navbar")
+//     sidebar.style.display = "flex"
+//   }
+//     function hideSidebar(){
+//     const sidebar = document.querySelector(".navbar")
+//     sidebar.style.display = "none"
+//   }
 
 console.log("Screen width:", window.screen.width);
 console.log("Viewport width:", window.innerWidth);
